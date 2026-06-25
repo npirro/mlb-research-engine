@@ -1,34 +1,53 @@
-# MLB Research Engine v4 — Feature Factory
+# MLB Research Engine v4B — Feature Control + Starter Ablation
 
-This version restructures the project around the thesis:
+This version enforces the thesis:
 
 The numbers decide. Not opinions.
 
-## What changed
+## Key change
 
-Feature logic is now modular:
+Production feature set is now:
 
-features/
-- team/team_features.py
-- starter/starter_features.py
-- schedule/schedule_features.py
-- registry/feature_sets.py
+team_only
+
+Why?
+
+The v4 backtest showed:
+
+- team_only beat team_plus_starter
+- starter features currently add noise
+- starter features stay in the lab until they earn their way back
 
 ## New output
 
-exports/feature_set_comparison.csv
+exports/starter_ablation.csv
 
-This compares:
-- team_only
-- starter_only
-- team_plus_starter
+This tests:
+- baseline team_only
+- team_only + each starter feature individually
+- team_only + useful starter candidates
+- team_only + all starter features
 
 ## Run
 
+```powershell
 py run_pipeline.py
+```
 
-## Commit after running
+## After running
 
+Send the output from:
+
+=== Starter Feature Ablation ===
+
+and:
+
+=== Holdout Test Results ===
+
+## Commit
+
+```powershell
 git add .
-git commit -m "Refactor into feature factory"
+git commit -m "Add feature control and starter ablation"
 git push
+```

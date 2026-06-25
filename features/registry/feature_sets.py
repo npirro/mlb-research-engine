@@ -26,7 +26,7 @@ FEATURE_SETS = {
     "team_plus_starter": TEAM_FEATURES + STARTER_FEATURES + SCHEDULE_FEATURES,
 }
 
-PRODUCTION_FEATURE_SET = "team_plus_starter"
+PRODUCTION_FEATURE_SET = "team_only"
 
 def get_features(feature_set_name=PRODUCTION_FEATURE_SET):
     if feature_set_name not in FEATURE_SETS:
