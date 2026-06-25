@@ -48,6 +48,52 @@ def blank_starter():
         "starter_hr": 0,
         "starter_pitches": 0,
     }
+def blank_bullpen():
+     return {
+        "bullpen_ip": 0.0,
+        "bullpen_hits": 0,
+        "bullpen_runs": 0,
+        "bullpen_er": 0,
+        "bullpen_bb": 0,
+        "bullpen_so": 0,
+        "bullpen_hr": 0,
+        "bullpen_pitches": 0,
+        "bullpen_pitchers_used": 0,
+    }
+
+
+def find_bullpen_totals(boxscore, side):
+    team_data = boxscore.get("teams", {}).get(side, {})
+    players = team_data.get("players", {})
+
+    totals = blank_bullpen()
+
+    for _, p in players.items():
+        pitching = p.get("stats", {}).get("pitching", {})
+
+        if not pitching:
+            continue
+
+        # Skip the actual starter. Bullpen = pitchers who did NOT start.
+        if safe_int(pitching.get("gamesStarted", 0)) == 1:
+            continue
+
+        ip = ip_to_float(pitching.get("inningsPitched", 0))
+
+        if ip <= 0:
+            continue
+
+        totals["bullpen_ip"] += ip
+        totals["bullpen_hits"] += safe_int(pitching.get("hits", 0))
+        totals["bullpen_runs"] += safe_int(pitching.get("runs", 0))
+        totals["bullpen_er"] += safe_int(pitching.get("earnedRuns", 0))
+        totals["bullpen_bb"] += safe_int(pitching.get("baseOnBalls", 0))
+        totals["bullpen_so"] += safe_int(pitching.get("strikeOuts", 0))
+        totals["bullpen_hr"] += safe_int(pitching.get("homeRuns", 0))
+        totals["bullpen_pitches"] += safe_int(pitching.get("numberOfPitches", 0))
+        totals["bullpen_pitchers_used"] += 1
+
+    return totals
 
 def find_actual_starter(boxscore, side):
     team_data = boxscore.get("teams", {}).get(side, {})
@@ -117,17 +163,24 @@ def download_games(start_season=2023, end_season=2025):
 
                     try:
                         boxscore = fetch_boxscore(game_pk)
+
                         home_starter = find_actual_starter(boxscore, "home")
                         away_starter = find_actual_starter(boxscore, "away")
+
+                        home_bullpen = find_bullpen_totals(boxscore, "home")
+                        away_bullpen = find_bullpen_totals(boxscore, "away")
+
                         time.sleep(0.03)
+
                     except Exception as e:
                         print(f"Boxscore failed for {game_pk}: {e}")
                         home_starter = blank_starter()
                         away_starter = blank_starter()
+                        home_bullpen = blank_bullpen()
+                        away_bullpen = blank_bullpen()
 
                     home_team = home.get("team", {})
                     away_team = away.get("team", {})
-
                     row = {
                         "game_pk": game_pk,
                         "date": day,
@@ -145,6 +198,10 @@ def download_games(start_season=2023, end_season=2025):
                         row[f"home_{k}"] = v
                     for k, v in away_starter.items():
                         row[f"away_{k}"] = v
+                    for k, v in home_bullpen.items():
+                        row[f"home_{k}"] = v
+                    for k, v in away_bullpen.items():
+                         row[f"away_{k}"] = v
 
                     all_rows.append(row)
 
