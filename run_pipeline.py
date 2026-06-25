@@ -1,3 +1,4 @@
+import features
 from pipeline.download_games import download_games
 from pipeline.build_features import build_features
 from models.train_logistic import train_model
@@ -6,6 +7,8 @@ from evaluation.backtest import evaluate_model
 from evaluation.feature_importance import export_feature_importance
 from model_lab.compare_feature_sets import compare_feature_sets
 from model_lab.starter_ablation import run_starter_ablation
+from model_lab.auto_feature_selection import run_auto_feature_selection
+from model_lab.cross_validation import run_cross_validation
 
 START_SEASON = 2023
 END_SEASON = 2025
@@ -21,6 +24,13 @@ def main():
     print("")
     print("Running starter ablation tests...")
     run_starter_ablation(features)
+    print("")
+    print("Running automatic feature selection...")
+    run_auto_feature_selection(features)
+    print("")
+    print("Running cross-validation by season...")
+    run_cross_validation(features)
+
 
     print("")
     print("Production feature set is currently: team_only")
