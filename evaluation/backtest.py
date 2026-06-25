@@ -1,20 +1,5 @@
-FEATURES = [
-    "win_pct_diff",
-    "rpg_diff",
-    "rapg_diff",
-    "run_diff_per_game_diff",
-    "recent_win_pct_diff",
-    "recent_rpg_diff",
-    "recent_rapg_diff",
-    "sp_starts_diff",
-    "sp_era_diff",
-    "sp_whip_diff",
-    "sp_kbb_diff",
-    "sp_ip_per_start_diff",
-    "sp_rest_diff",
-    "sp_recent_era_diff",
-    "home_field",
-]
+from features.registry.feature_sets import get_features
+FEATURES = get_features()
 
 from sklearn.metrics import accuracy_score, log_loss, brier_score_loss
 
