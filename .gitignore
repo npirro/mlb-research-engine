@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+
+data/raw/
+data/processed/
+
+exports/
+*.joblib
+
+.env
+.venv/
+venv/
+
+.DS_Store
