@@ -1,0 +1,16 @@
+target_date,game_pk,game,game_time_et,status,venue_id,venue_name,latitude,longitude,coord_source,env_temp,env_temp_source,forecast_hour,forecast_hour_diff_minutes,has_coordinates,has_real_env_temp,uses_open_meteo,uses_mlb_weather
+2026-06-27,824257,HOU @ DET,1:10 PM,Scheduled,2394,Comerica Park,42.339,-83.0485,manual_venue_coordinates,74.8,open_meteo_forecast,2026-06-27T13:00,10.0,True,True,True,False
+2026-06-27,824745,NYY @ BOS,1:10 PM,Scheduled,3,Fenway Park,42.3467,-71.0972,manual_venue_coordinates,73.2,open_meteo_forecast,2026-06-27T13:00,10.0,True,True,True,False
+2026-06-27,822794,TEX @ TOR,3:07 PM,Scheduled,14,Rogers Centre,43.6414,-79.3894,manual_venue_coordinates,73.3,open_meteo_forecast,2026-06-27T15:00,7.0,True,True,True,False
+2026-06-27,823364,CIN @ PIT,4:05 PM,Scheduled,31,PNC Park,40.4469,-80.0057,manual_venue_coordinates,76.0,open_meteo_forecast,2026-06-27T16:00,5.0,True,True,True,False
+2026-06-27,823609,PHI @ NYM,4:10 PM,Scheduled,3289,Citi Field,40.7571,-73.8458,manual_venue_coordinates,76.7,open_meteo_forecast,2026-06-27T16:00,10.0,True,True,True,False
+2026-06-27,824581,KC @ CWS,4:10 PM,Scheduled,4,Rate Field,41.83,-87.6339,manual_venue_coordinates,70.5,open_meteo_forecast,2026-06-27T15:00,10.0,True,True,True,False
+2026-06-27,822960,AZ @ TB,6:10 PM,Scheduled,12,Tropicana Field,27.7682,-82.6534,manual_venue_coordinates,90.0,open_meteo_forecast,2026-06-27T18:00,10.0,True,True,True,False
+2026-06-27,824825,WSH @ BAL,7:05 PM,Scheduled,2,Oriole Park at Camden Yards,39.284,-76.6217,manual_venue_coordinates,75.3,open_meteo_forecast,2026-06-27T19:00,5.0,True,True,True,False
+2026-06-27,824421,SEA @ CLE,7:10 PM,Scheduled,5,Progressive Field,41.4962,-81.6852,manual_venue_coordinates,72.0,open_meteo_forecast,2026-06-27T19:00,10.0,True,True,True,False
+2026-06-27,823689,COL @ MIN,7:10 PM,Scheduled,3312,Target Field,44.9817,-93.2776,manual_venue_coordinates,81.0,open_meteo_forecast,2026-06-27T18:00,10.0,True,True,True,False
+2026-06-27,823770,CHC @ MIL,7:10 PM,Scheduled,32,American Family Field,43.028,-87.9712,manual_venue_coordinates,71.6,open_meteo_forecast,2026-06-27T18:00,10.0,True,True,True,False
+2026-06-27,823038,MIA @ STL,7:15 PM,Scheduled,2889,Busch Stadium,38.6226,-90.1928,manual_venue_coordinates,84.1,open_meteo_forecast,2026-06-27T18:00,15.0,True,True,True,False
+2026-06-27,823283,LAD @ SD,8:40 PM,Scheduled,2680,Petco Park,32.7073,-117.1573,manual_venue_coordinates,67.6,open_meteo_forecast,2026-06-27T18:00,20.0,True,True,True,False
+2026-06-27,823207,ATL @ SF,9:05 PM,Scheduled,2395,Oracle Park,37.7786,-122.3893,manual_venue_coordinates,62.4,open_meteo_forecast,2026-06-27T18:00,5.0,True,True,True,False
+2026-06-27,824015,ATH @ LAA,9:38 PM,Scheduled,1,Angel Stadium,33.8003,-117.8827,manual_venue_coordinates,69.6,open_meteo_forecast,2026-06-27T19:00,22.0,True,True,True,False
