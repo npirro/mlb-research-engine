@@ -1,0 +1,16 @@
+target_date,game_pk,game,game_time_et,status,away_team,home_team,away_probable_pitcher,home_probable_pitcher,away_starter_id,home_starter_id,away_starter_hand,home_starter_hand,both_starter_hands_known,env_temp,env_temp_source,opp_adj_offense_diff,home_vs_hand_games_scaled,away_vs_hand_games_scaled,vs_hand_games_scaled_diff,home_vs_hand_games,away_vs_hand_games,feature_complete_numeric
+2026-06-26,824255,HOU @ DET,6:40 PM,Final,Houston Astros,Detroit Tigers,Spencer Arrighetti,Keider Montero,681293,672456,R,R,True,73.0,boxscore_weather,-0.41807105380093734,1.0,1.0,0.0,56,60,True
+2026-06-26,823363,CIN @ PIT,6:40 PM,Final,Cincinnati Reds,Pittsburgh Pirates,Andrew Abbott,Paul Skenes,671096,694973,L,R,True,73.0,boxscore_weather,0.7632176212601127,0.4,1.0,-0.6,20,62,True
+2026-06-26,824824,WSH @ BAL,7:05 PM,Final,Washington Nationals,Baltimore Orioles,Andrew Alvarez,Trevor Rogers,674841,669432,L,L,True,83.0,boxscore_weather,-0.6922535664241778,0.44,0.5,-0.06,22,25,True
+2026-06-26,822796,TEX @ TOR,7:07 PM,Final,Texas Rangers,Toronto Blue Jays,Nathan Eovaldi,Patrick Corbin,543135,571578,R,L,True,68.0,boxscore_weather,0.16927125981777014,1.0,0.34,0.6599999999999999,60,17,True
+2026-06-26,824423,SEA @ CLE,7:10 PM,Final,Seattle Mariners,Cleveland Guardians,Luis Castillo,Joey Cantillo,622491,676282,R,L,True,70.0,boxscore_weather,0.05693733724267869,1.0,0.48,0.52,53,24,True
+2026-06-26,822962,AZ @ TB,7:10 PM,Final,Arizona Diamondbacks,Tampa Bay Rays,Zac Gallen,Nick Martinez,668678,607259,R,R,True,72.0,boxscore_weather,0.19307018964889533,1.0,1.0,0.0,53,59,True
+2026-06-26,823610,PHI @ NYM,7:10 PM,Final,Philadelphia Phillies,New York Mets,Zack Wheeler,Zach Thornton,554430,804267,R,L,True,81.0,boxscore_weather,-0.4943505293488686,1.0,0.64,0.36,60,32,True
+2026-06-26,824743,NYY @ BOS,7:10 PM,Final,New York Yankees,Boston Red Sox,Will Warren,Payton Tolle,701542,801139,R,L,True,78.0,boxscore_weather,-0.9752362331275393,1.0,0.58,0.42000000000000004,60,29,True
+2026-06-26,824582,KC @ CWS,7:40 PM,Final,Kansas City Royals,Chicago White Sox,Steven Cruz,David Sandlin,674444,689818,R,R,True,66.0,boxscore_weather,0.29580612800694084,1.0,1.0,0.0,55,60,True
+2026-06-26,823773,CHC @ MIL,7:45 PM,Final,Chicago Cubs,Milwaukee Brewers,Colin Rea,Jacob Misiorowski,607067,694819,R,R,True,71.0,boxscore_weather,0.3375798425125218,1.0,1.0,0.0,54,61,True
+2026-06-26,823688,COL @ MIN,8:10 PM,Final,Colorado Rockies,Minnesota Twins,Tomoyuki Sugano,Taj Bradley,608372,671737,R,R,True,78.0,boxscore_weather,0.22191721904791262,1.0,1.0,0.0,56,60,True
+2026-06-26,823039,MIA @ STL,8:15 PM,Final,Miami Marlins,St. Louis Cardinals,Max Meyer,Michael McGreevy,676974,700241,R,R,True,77.0,boxscore_weather,0.34194474277528464,1.0,1.0,0.0,58,61,True
+2026-06-26,824014,ATH @ LAA,9:38 PM,Final,Athletics,Los Angeles Angels,J.T. Ginn,Walbert Ureña,669372,700712,R,R,True,72.0,boxscore_weather,-0.07863786812881202,1.0,1.0,0.0,59,57,True
+2026-06-26,823285,LAD @ SD,9:45 PM,Final,Los Angeles Dodgers,San Diego Padres,Roki Sasaki,Walker Buehler,808963,621111,R,R,True,70.0,boxscore_weather,-1.230426659690918,1.0,1.0,0.0,59,61,True
+2026-06-26,823206,ATL @ SF,10:15 PM,Final,Atlanta Braves,San Francisco Giants,Reynaldo López,Trevor McDonald,625643,686790,R,R,True,62.0,boxscore_weather,-0.6454959766124384,1.0,0.9,0.09999999999999998,58,45,True
