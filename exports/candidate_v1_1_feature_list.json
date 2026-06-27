@@ -1,0 +1,38 @@
+{
+  "model_version": "candidate_v1_1",
+  "baseline_features": [
+    "win_pct_diff",
+    "rpg_diff",
+    "rapg_diff",
+    "run_diff_per_game_diff",
+    "recent_win_pct_diff",
+    "recent_rpg_diff",
+    "recent_rapg_diff",
+    "home_field"
+  ],
+  "candidate_added_features": [
+    "vs_hand_games_scaled_diff",
+    "env_temp",
+    "opp_adj_offense_diff"
+  ],
+  "candidate_features": [
+    "win_pct_diff",
+    "rpg_diff",
+    "rapg_diff",
+    "run_diff_per_game_diff",
+    "recent_win_pct_diff",
+    "recent_rpg_diff",
+    "recent_rapg_diff",
+    "home_field",
+    "vs_hand_games_scaled_diff",
+    "env_temp",
+    "opp_adj_offense_diff"
+  ],
+  "verdict": {
+    "improves_avg_log_loss": true,
+    "improves_avg_brier": true,
+    "improves_every_season_log_loss": true,
+    "improves_every_season_brier": true,
+    "strict_promote": true
+  }
+}
